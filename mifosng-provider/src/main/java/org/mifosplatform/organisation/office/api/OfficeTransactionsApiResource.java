@@ -109,7 +109,7 @@ public class OfficeTransactionsApiResource {
     @Produces({ MediaType.APPLICATION_JSON })
     public String delete(@PathParam("transactionId") final Long transactionId) {
 
-        final CommandWrapper commandRequest = new CommandWrapperBuilder().deleteOfficeTransaction(transactionId).build();
+        final CommandWrapper commandRequest_robert = new CommandWrapperBuilder().deleteOfficeTransaction(transactionId).build();
 
         final CommandProcessingResult result = this.commandsSourceWritePlatformService.logCommandSource(commandRequest);
 
